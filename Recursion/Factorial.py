@@ -8,4 +8,4 @@ def factorial(num):
     except BaseException:
         print("Do not enter negative number")
 
-print(factorial(4))
+print(factorial(5))
