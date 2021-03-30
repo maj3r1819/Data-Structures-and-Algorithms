@@ -1,7 +1,15 @@
 from array import *
 
-
-myarray = array('i', [1,2,3,4,5]) # i means int
+##################################################################
+# 1. Create an array and traverse.
+myarray = array('i', [1,2,3,4,5,6]) # i means int
 print(myarray)
-myarray = array('d', [1.3,2.4,3.2,4.1,5.5]) # d means double
+myarray1 = array('d', [1.3,2.4,3.2,4.1,5.5]) # d means double
+print(myarray1)
+##################################################################
+# 2. Insert Elements in an array.
+myarray.insert(6, 7) #6 is the index and 7 is the value
 print(myarray)
+myarray.insert(0, 0) #6 is the index and 7 is the value
+print(myarray)
+##################################################################
