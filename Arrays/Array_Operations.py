@@ -22,8 +22,18 @@ traverse(myarray)
 print("--------------------------------")
 # 4 Accessing an element in an array
 def accesselement(arr, index):
-    if index> len(arr):
+    if index>= len(arr):
         print("No such element present")
     print(arr[index])
 accesselement(myarray, 4)
 ##################################################################
+print("--------------------------------")
+# 5 Searching for an element
+def search(arr , value):
+    for i in arr:
+        if i == value:
+            print("Element present at :", arr.index(value))
+search(myarray, 4)
+##################################################################
+print("--------------------------------")
+
