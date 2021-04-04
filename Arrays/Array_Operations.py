@@ -18,3 +18,12 @@ def traverse(array):
     for i in array:
         print(i)
 traverse(myarray)
+##################################################################
+print("--------------------------------")
+# 4 Accessing an element in an array
+def accesselement(arr, index):
+    if index> len(arr):
+        print("No such element present")
+    print(arr[index])
+accesselement(myarray, 4)
+##################################################################
