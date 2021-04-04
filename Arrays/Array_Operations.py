@@ -13,3 +13,8 @@ print(myarray)
 myarray.insert(0, 0) #6 is the index and 7 is the value
 print(myarray)
 ##################################################################
+# 3 Traversal Operations
+def traverse(array):
+    for i in array:
+        print(i)
+traverse(myarray)
