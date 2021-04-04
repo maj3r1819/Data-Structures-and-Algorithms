@@ -36,4 +36,9 @@ def search(arr , value):
 search(myarray, 4)
 ##################################################################
 print("--------------------------------")
+#Delete an element
+myarray.remove(7) #pass value
+print(myarray)
+print("--------------------------------")
+
 
