@@ -1,0 +1,8 @@
+Similarities
+1. Both Data Structures are mutable
+2. Both can be indexed and iterated through
+3. They both can be sliced
+
+Differences
+1. Arithmetic operations(array/2) are easier on ararys compared to lists.
+2. Datatypes have to be same in arrays. In lists data types can be different.

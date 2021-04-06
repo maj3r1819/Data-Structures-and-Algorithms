@@ -48,3 +48,10 @@ print("----------map function--------------")
 print("Please Enter list :")
 maplist = list(map(int, input().split()))
 print(maplist)
+
+print("----------Pitfalls and how to avoid them--------------")
+pitylist = [5,4,3,2,1]
+pitylist = sorted(pitylist)
+print(pitylist)
+# Sorted function does not modify original list unline sort fucntion!!! so it is better
+
