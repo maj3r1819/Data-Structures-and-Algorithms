@@ -49,4 +49,23 @@ strlist.append('c')
 print(strlist)
 strlist.remove('d')
 print(strlist)
+print('------------------------------')
+
+# 6 Searching for an element in a List
+mylist1 = [1,2,3,4,5,6,7,8,9,10]
+
+if 2 in mylist1:
+    print(mylist1.index(2))
+else:
+    print("value does not exist")
+print('------------------------------')
+
+def linearsearch(list, value):
+    for i in list:
+        if i == value:
+            return list.index(value)
+
+    return "value does not exist"
+print(linearsearch(mylist1, 5))
+print('------------------------------')
 
