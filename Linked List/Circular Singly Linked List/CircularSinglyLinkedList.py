@@ -27,10 +27,14 @@ class CircularSinglyLinkedList:
     #Insertion of a Node to the Circular Single Linked List
 
     def insertCSLL(self,value, location):
+        newNode = Node(value)
         if self.head is None:
-            print("The Head reference is None")
+            newNode.next = newNode
+            self.head = newNode
+            self.tail = newNode
+
+
         else:
-            newNode = Node(value)
             if location ==0: # insert element at the beginning of linked list
                 newNode.next = self.head
                 self.head = newNode
@@ -137,11 +141,17 @@ print([node.value for node in circularSLL])
 print("----------------------------")
 print("Node Insertion")
 circularSLL.insertCSLL(2,1)
+print([node.value for node in circularSLL])
 circularSLL.insertCSLL(3,1)
+print([node.value for node in circularSLL])
 circularSLL.insertCSLL(4,1)
+print([node.value for node in circularSLL])
 circularSLL.insertCSLL(5,1)
+print([node.value for node in circularSLL])
 circularSLL.insertCSLL(0,0)
+print([node.value for node in circularSLL])
 circularSLL.insertCSLL(6,1)
+print([node.value for node in circularSLL])
 circularSLL.insertCSLL(10,5)
 print([node.value for node in circularSLL])
 
