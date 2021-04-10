@@ -25,7 +25,7 @@ class SLinkedList:
 
         else:
             if location ==0: # insert element at the beginning of linked list
-                newNode.next = self.head
+                newNode.next = self.head # why? because head stores adress of the newNode
                 self.head = newNode
             elif location ==1: # insert element at the end of linked list
                 newNode.next = None
@@ -41,13 +41,33 @@ class SLinkedList:
                 tempNode.next = newNode
                 newNode.next = nextNode
 
+    # Traversing Through the Linked List!!
+    def traverseSLL(self):
+        if self.head is None:
+            print("Single Linked List Does not Exist :/ ")
+
+        else:
+            node = self.head
+            while node is not None:
+                print(node.value)
+                node = node.next
+
 
 singlylinkedlist = SLinkedList()
+
+print("----------------------------")
+print("Node Insertion")
 singlylinkedlist.insertSLL(1,0)
-singlylinkedlist.insertSLL(2,0)
-singlylinkedlist.insertSLL(4,2)
+singlylinkedlist.insertSLL(2,1)
+singlylinkedlist.insertSLL(3,1)
+singlylinkedlist.insertSLL(4,1)
+singlylinkedlist.insertSLL(5,2)
 
 print([node.value for node in singlylinkedlist])
+print("----------------------------")
+print("Node Traversal")
+singlylinkedlist.traverseSLL()
+
 
 
 
