@@ -1,0 +1,14 @@
+In Linked List Elements are independent objects.
+In Arrays Elements are not independent objects.
+
+When we delete an element in Array, they array will still occupy that memory.
+In linked list we can delete any element and memory will also be re usable
+
+In linked list, size is not defined, it can be incremented and reduced anytime(Variable size)
+In arrays size of the array is fixed.
+
+Insertion and removals are very efficient in Linked list.
+Whereas in arrays, we have to move the elements to one side which is inefficient.
+
+Finding an element in  linked list is time consuming.
+Finding index of an element known in an array has time complexity of O(1)
