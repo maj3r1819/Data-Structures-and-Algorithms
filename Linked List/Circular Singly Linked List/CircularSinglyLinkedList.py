@@ -105,6 +105,7 @@ class CircularSinglyLinkedList:
                     index+=1
                 nextnode = node.next
                 node.next = nextnode.next
+                nextnode.next = None
 
     # Search for a Node in the Singly Linked List
     def searchCSLL(self, nodeValue):
@@ -160,12 +161,16 @@ print("Node Traversal")
 circularSLL.traverseCSLL()
 print("----------------------------")
 print("Node Deletion")
+print("Original Linked List: ")
 print([node.value for node in circularSLL])
 circularSLL.deleteCSLL(0)
+print("Deletion Operation Starts:")
 print([node.value for node in circularSLL])
 circularSLL.deleteCSLL(1)
 print([node.value for node in circularSLL])
 circularSLL.deleteCSLL(4)
+print([node.value for node in circularSLL])
+circularSLL.deleteCSLL(-1) #To delete second value pass negative value
 print([node.value for node in circularSLL])
 
 

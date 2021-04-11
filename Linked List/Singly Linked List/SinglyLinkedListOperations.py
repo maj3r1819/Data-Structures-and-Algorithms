@@ -48,7 +48,7 @@ class SLinkedList:
 
         else:
             node = self.head
-            while node is not None:
+            while node:
                 print(node.value)
                 node = node.next
 
@@ -133,9 +133,15 @@ print(singlylinkedlist.searchSLL(5))
 
 print("----------------------------")
 print("Node Deletion")
+print("Original Linked List: ")
+print([node.value for node in singlylinkedlist])
+print("Deletion Operation Starts:")
 singlylinkedlist.deleteSLL(0)
 singlylinkedlist.deleteSLL(2)
 print([node.value for node in singlylinkedlist])
+singlylinkedlist.deleteSLL(-1) #To delete negative value pass any negative value
+print([node.value for node in singlylinkedlist])
+
 
 print("----------------------------")
 print("Deleting and Entire Singly Linked List")
