@@ -1,0 +1,8 @@
+Stack using List
+-Easy to Implement
+-Speed Problem when it grows
+-Size of List can be changed so stack can be of variable size
+
+Stack using Linked List
+-Fast Performance
+-Implementation is not easy

@@ -2,6 +2,8 @@ import sys
 sys.path.insert(0, 'D:\Projects\Data-Structures-and-Algorithms\Linked List\Singly Linked List')
 from SinglyLinkedListOperations import SLinkedList, Node
 
+
+#Method to delete duplicates in a Linked List
 def remove_duplicates(linked_list):
     if linked_list.head is None:
         return
