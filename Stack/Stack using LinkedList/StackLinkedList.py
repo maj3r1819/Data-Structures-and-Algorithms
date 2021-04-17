@@ -39,6 +39,23 @@ class Stack:
             self.linkedlist.head = self.linkedlist.head.next
             return nodevalue
 
+
+    def peek(self):
+        if self.isEmpty():
+            return "The Stack is Empty :/"
+
+        else:
+            nodevalue = self.linkedlist.head.value
+            return nodevalue
+
+    def deleteStack(self):
+        if self.isEmpty():
+            print("Stack is already Empty :/")
+
+        else:
+            self.linkedlist.head = None
+            print("Stack is deleted -_-")
+
 customstack = Stack()
 customstack.push(1)
 customstack.push(2)
@@ -48,5 +65,8 @@ print(customstack)
 print("-----------------")
 customstack.pop()
 print(customstack)
-
+print("-----------------")
+print(customstack.peek())
+print("-----------------")
+customstack.deleteStack()
 
