@@ -31,7 +31,7 @@ class Queue:
 
     def Delete(self):
         self.items = None
-        
+
 customqueue = Queue()
 print(customqueue.isEmpty())
 customqueue.Enqueue(1)
