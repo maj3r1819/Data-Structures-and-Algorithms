@@ -1,0 +1,11 @@
+Tree Terminology
+
+1. Root: Top node without any parent.
+2. Edge: A link between parent and child.
+3. Leaf: A node without any children.
+4. Sibling: Children of the same parent.
+5. Ancestor: parent, grandparent and great grand parent of a node.
+6. Depth of a node: A length of the path from node to the node.
+7. Height of a node: A length of the path from the node to the deepest node.
+8. Depth of a tree: depth of root node (0)
+9. Height of a tree: Height of root node.
