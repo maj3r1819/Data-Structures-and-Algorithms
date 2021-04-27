@@ -1,0 +1,13 @@
+Types of Binary Trees
+
+1. Full Binary Tree
+Each node has either 2 children or 0 children.
+
+2. Perfect Binary Tree
+All nodes have 2 children and are at same level. All Leaf nodes are at the ssame level
+
+3.Complete Binary Tree
+Nodes have 2 children but they all leaf nodes level are not the same.
+
+4. Balanced Binary Tree
+Leaf nodes are at the same level. but no compulsion of 2 children.

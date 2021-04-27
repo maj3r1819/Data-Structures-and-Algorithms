@@ -1,0 +1,6 @@
+Binary Tree
+-In binary Tree, each node has only at most 2 children.
+-is a family of data structure(BST, heap tree, AVL, red black tree, syntax tree)
+- it is prerequisite of advanced trees like bst, ^^, etc
+- Huffman coding problem, heap priority problem and expression parsing problem can be
+solved sufficiently using BT
