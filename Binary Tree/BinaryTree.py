@@ -10,6 +10,10 @@ class TreeNode:
 
 newBT = TreeNode("Drinks")
 leftChild = TreeNode("Hot")
+tea = TreeNode("Tea")
+coffee = TreeNode("Coffee")
+leftChild.leftChild = tea
+leftChild.rightChild = coffee
 rightChild = TreeNode("Cold")
 newBT.leftChild = leftChild
 newBT.rightChild = rightChild
@@ -53,6 +57,22 @@ def levelOrderTraversal(rootNode):
                 customqueue.enqueue(root.value.rightChild)
 
 
+def searchTree(rootNode, nodeValue):
+    if not rootNode:
+        return "Bt does not exist"
+    else:
+        customqueue = Queue()
+        customqueue.enqueue(rootNode)
+        while not (customqueue.isempty()):
+            root = customqueue.dequeue()
+            if root.value.data == nodeValue:
+                return "Success, Node found : {}".format(nodeValue)
+            if (root.value.leftChild is not None):
+                customqueue.enqueue(root.value.leftChild)
+
+            if (root.value.rightChild is not None):
+                customqueue.enqueue(root.value.rightChild)
+        return "Not Found"
 
 print("Pre Order Traversal: ")
 preOrderTraversal(newBT)
@@ -62,3 +82,6 @@ print("Post Order Traversal: ")
 postOrderTraversal(newBT)
 print("Level Order Traversal: ")
 levelOrderTraversal(newBT)
+print("Searching Node: ")
+print(searchTree(newBT, "Tea"))
+
