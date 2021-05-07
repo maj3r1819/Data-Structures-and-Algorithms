@@ -162,6 +162,12 @@ def deleteNode(rootNode, node):
 
         return "fail"
 
+def delEnitreBT(rootNode):
+    rootNode.data = None
+    rootNode.leftChild = None
+    rootNode.rightChild = None
+    return "Entire BT is deleted!"
+
 
 print("Pre Order Traversal: ")
 preOrderTraversal(newBT)
@@ -189,3 +195,6 @@ print("Deleting given node in a bt:")
 deleteNode(newBT, "Hot")
 levelOrderTraversal(newBT)
 
+print("Deleting Entire BT:")
+print(delEnitreBT(newBT))
+levelOrderTraversal(newBT)
