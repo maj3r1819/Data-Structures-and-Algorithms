@@ -1,0 +1,4 @@
+What is a Binary Search Tree?
+-In the left subtree the value of the node is less than or equal to the parent Node.
+-In the right subtree the value of the node is more than the parent Node.
+- It performs faster than Binary Tree when inserting and deleting Nodes.
