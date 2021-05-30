@@ -81,6 +81,51 @@ def levelOrderTraversal(rootNode):
             if root.value.rightChild is not None:
                 customQueue.enqueue(root.value.rightChild)
 
+def searchNode(rootNode, nodeValue):
+    if rootNode.data == nodeValue:
+        print("value is found")
+
+    elif nodeValue< rootNode.data:
+        if rootNode.leftChild.data == nodeValue:
+            print("value found")
+        else:
+            searchNode(rootNode.leftChild, nodeValue)
+
+    elif nodeValue > rootNode.data:
+        if rootNode.rightChild.data == nodeValue:
+            print("Value found")
+        else:
+            searchNode(rootNode.rightChild, nodeValue)
+
+
+def minValueNode(bstNode):
+    current = bstNode
+    while(current.leftChild is not None):
+        current = current.leftChild
+    return current
+
+def deleteNode(rootNode, nodeValue):
+    if rootNode is None:
+        return rootNode
+    if nodeValue < rootNode.data:
+        rootNode.leftChild = deleteNode(rootNode.leftChild, nodeValue)
+    elif nodeValue > rootNode.data:
+        rootNode.rightChild = deleteNode(rootNode.rightChild, nodeValue)
+    else: #Node with one child either left or right
+        if rootNode.leftChild is None:
+            temp = rootNode.rightChild
+            rootNode = None
+            return temp
+
+        if rootNode.rightChild is None:
+            temp = rootNode.leftChild
+            rootNode = None
+            return temp
+
+        temp = minValueNode(rootNode.rightChild,)
+        rootNode.data = temp.data
+        rootNode.rightChild = deleteNode(rootNode.rightChild, temp.data)
+    return rootNode
 
 
 
@@ -104,8 +149,12 @@ print("-----------------PreOrderTraversal-------------------")
 postOrderTraversal(newBST)
 print("-----------------LevelOrderTraversal-------------------")
 levelOrderTraversal(newBST)
-
-
+print("-----------------searchNode-------------------")
+searchNode(newBST, 60)
+print("-----------------deleteNode-------------------")
+deleteNode(newBST, 100)
+print("-----------------LevelOrderTraversal-------------------")
+levelOrderTraversal(newBST)
 
 
 
