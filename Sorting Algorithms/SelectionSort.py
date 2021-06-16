@@ -14,3 +14,13 @@ def selectionSort(customList):
 
 clist = [5,4,3,2,1]
 selectionSort(clist)
+
+"""
+pros:
+-space efficient
+-easy to implement
+
+cons:
+time complexity
+
+"""
