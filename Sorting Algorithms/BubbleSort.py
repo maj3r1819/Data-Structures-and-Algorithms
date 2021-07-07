@@ -9,7 +9,7 @@ def bubbleSort(customList):
 
 clist = [5,4,3,2,1]
 bubbleSort(clist)
-
+ba =  [5,1, 2, 5, 6, 8, 9,10]
 """
 When to use Bubble Sort?
 -Space is a concern
